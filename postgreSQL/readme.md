@@ -44,6 +44,11 @@ ou da mesma tabela. Sua principal função é garantir a integridade referencial
 
 <h4>Tipos de dados:</h4>
 
+<img src="https://github.com/inessouza/bootcamp-santander/blob/main/postgreSQL/imagens/tiposNumericos.PNG?raw=true"/>
+<img src="https://github.com/inessouza/bootcamp-santander/blob/main/postgreSQL/imagens/caracteres.PNG?raw=true"/>
+<img src="https://github.com/inessouza/bootcamp-santander/blob/main/postgreSQL/imagens/datas.PNG?raw=true"/>
+<img src="https://github.com/inessouza/bootcamp-santander/blob/main/postgreSQL/imagens/boolean.PNG?raw=true"/>
+
 <h4>DML</h4>
 Data Manipulation Language (Linguagem de Manipulação de Dados)
 
