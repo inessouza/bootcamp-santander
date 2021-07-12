@@ -54,3 +54,66 @@ Data Manipulation Language (Linguagem de Manipulação de Dados)
 
 <h4>DDL</h4>
 Data Definition Language (Linguagem de Definição de Dados)
+
+<br/> 
+
+<h2 align="center">Fundamentos da Structured Query Language (SQL) | 3º Módulo </h2>
+
+<h3>Comando Truncate:</h3>
+Serve para esvaziar a tabela, temos que ter muito cuidado ao usa-lo.
+
+<h3> Funções agregadas em PostgreSQL: </h3>
+
+<h4> AVG: </h4>
+Esta função traz a média de valores.
+
+_Exemplo:_
+
+``` 
+SELECT AVG(valor) FROM cliente_transacoes;
+``` 
+
+<h4> COUNT (opção: HAVING): </h4>
+Esta função traz a contagem de dados. Com a opção HAVING ele traz os valores conforme a condição solicitada.
+
+_Exemplo:_
+
+``` 
+SELECT COUNT(numero) FROM cliente;
+``` 
+
+Com a opção HAVING ele traz os valores conforme a condição solicitada.
+
+_Exemplo:_
+
+```
+SELECT COUNT(id), tipo_transacao_id FROM cliente_transacoes GROUP BY tipo_transacao_id HAVNG COUNT(id) > 150;
+```
+
+<h4> MAX: </h4>
+Esta função traz o maior número.
+
+_Exemplo:_
+
+```
+SELECT MAX(numero) FROM cliente;
+```
+
+<h4> MIN: </h4>
+Esta função traz o menor número.
+
+_Exemplo:_
+
+```
+SELECT MIN(numero) FROM cliente;
+```
+
+<h4> SUM: </h4>
+
+Esta função traz a soma de todos os valores.
+
+_Exemplo:_
+
+```
+SELECT SUM(valor) FROM cliente_transacoes;
+```
