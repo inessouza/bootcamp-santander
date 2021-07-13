@@ -117,3 +117,77 @@ _Exemplo:_
 ```
 SELECT SUM(valor) FROM cliente_transacoes;
 ```
+
+<h3> JOINS </h3>
+
+Joins são utilizados para unir tabelas.
+
+_Exemplo:_ 
+
+``` 
+SELECT banco.numero FROM banco JOIN agencia ON agencia.banco_numero = banco.numero;
+``` 
+
+<h4> Left Join: </h4>
+
+Traz dados da tabela a esquerda (tabela 1), e se houver um relacionamento ele traz dados da tabela da direita (tabela 2).
+
+_Exemplos:_ 
+
+``` 
+SELECT banco.numero FROM banco LEFT JOIN agencia ON agencia.banco_numero = banco.numero;
+``` 
+
+``` 
+SELECT banco.numero, banco.nome, agencia.numero, agencia.nome 
+FROM banco LEFT JOIN agencia ON agencia.banco_numero = banco.numero;
+``` 
+
+<h4> Right Join: </h4>
+
+Traz dados da tabela a direita (tabela 2), e se houver um relacionamento ele traz dados da tabela da esquerda (tabela 1).
+
+_Exemplo:_
+
+``` 
+SELECT agencia.numero, agencia.nome, banco.numero, banco.nome 
+FROM agencia RIGHT JOIN banco ON banco.numero = agencia.banco_numero;
+``` 
+
+<h4> Full Join: </h4>
+
+Traz todas as possibilidades de relacionamento entre tabelas.
+
+_Exemplo:_
+
+``` 
+SELECT banco.numero, banco.nome, agencia.numero, agencia.nome 
+FROM banco FULL JOIN agencia ON agencia.banco_numero = banco.numero;
+``` 
+
+<h4> Cross Join: </h4>
+
+Todos os dados de uma tabela serão cruzados com todos os dados da tabela referenciada no CROSS JOIN, criando uma matriz.
+Este comando não é muito recomendado, pois desperdiça recursos,  de preferência, devemos usa-lo apenas em casos extremos.
+
+_Exemplo:_
+
+```
+SELECT tbla.valor, tblb.valor FROM teste_a tbla CROSS JOIN teste_b tblb;
+```
+
+<h4> CTE - Common Table Expressions: </h4>
+
+Forma auxiliar de organizar "statements", ou seja, blocos de códigos, para consultas muito grandes, gerando tabelas temporárias e criando relacionamentos entre elas.
+Dentro dos statements podem ter SELECTs, INSERTs, UPDATES ou DELETs.
+
+_Exemplo:_
+
+```
+WITH tbl_tmp_banco AS (
+	SELECT numero, nome
+	FROM banco
+)
+SELECT numero, nome
+FROM tbl_tmp_banco;
+```
