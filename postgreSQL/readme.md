@@ -191,3 +191,57 @@ WITH tbl_tmp_banco AS (
 SELECT numero, nome
 FROM tbl_tmp_banco;
 ```
+
+<h3> Views </h3>
+
+Views são visões, são "camadas" para tabelas, são "alias" para uma ou mais queries. Aceitam comandos de SELECT, INSERT, UPDATE e DELETE.
+
+<h4> Temporary </h4>
+
+View presente apenas durante a sessão do usuário, se houver 
+desconexão esta View não estará mais disponível.
+
+_Exemplo:_ 
+
+```
+CREATE OR REPLACE TEMPORARY VIEW vw_bancos AS (
+	SELECT numero, nome, ativo
+	FROM banco
+);
+```
+
+<h4> Recursive </h4>
+
+Esta view fará com que o comando dentro do seu interior chamará ela mesma, 
+criando uma espécie de loop.
+Nesta view é obrigatório a existência dos campos da View, e é obrigatório
+a utilização do UNION ALL.
+
+_Exemplo:_
+
+```
+CREATE OR REPLACE RECURSIVE VIEW (nome_da_view)(campos_da_view) AS
+	SELECT base
+	UNION ALL
+	SELECT campos
+	FROM tabela_base
+	JOIN (nome_da_view)
+);
+```
+
+<h3> Transações </h3>
+
+Conceito fundamental de todos os sistemas de banco de dados. Conceito de mútiplas 
+etapas/códigos reunidos em apenas uma transação, onde o resultado precisa ter
+tudo ou nada.
+
+<h3> Funções </h3>
+
+São conjuntos de códigos que são executados dentro de uma transação com a finalidade
+de facilitar a programação e obter o reaproveitamento/reutilização de códigos.
+
+Existem quatro tipos de funções:
+- Query language (funções escritas em SQL)
+- Procedural language functions (funções escritas em, por exemplo, PL/pqSQL ou PL/py)
+- Internal functions
+- C-language functions
