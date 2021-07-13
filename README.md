@@ -8,7 +8,7 @@
 <li>*[x] Boas-vindas ao Bootcamp Santander Fullstack Developer </li>
 <li>*[x] Lógica de programação essencial </li>
 <li>*[x] Introdução ao Git e ao GitHub </li>
-<li>*[ ] Conceitos e melhores práticas com bancos de dados PostgreSQL </li>
+<li>*[x] Conceitos e melhores práticas com bancos de dados PostgreSQL </li>
 <li>*[x] Desenvolvimento básico em Java </li>
 <li>*[ ] Desenvolvimento avançado em Java </li>
 <li>*[x] Estrutura de Dados e Algoritmos</li>
