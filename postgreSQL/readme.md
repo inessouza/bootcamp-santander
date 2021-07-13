@@ -245,3 +245,11 @@ Existem quatro tipos de funções:
 - Procedural language functions (funções escritas em, por exemplo, PL/pqSQL ou PL/py)
 - Internal functions
 - C-language functions
+
+<div align="center">
+
+<h2>Status do Curso: Concluído</h2> 
+
+<img src="https://github.com/inessouza/bootcamp-santander/blob/main/postgreSQL/imagens/certificado-InesSouza.PNG?raw=true" />
+	
+</div>
