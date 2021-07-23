@@ -44,10 +44,11 @@ ou da mesma tabela. Sua principal função é garantir a integridade referencial
 
 <h4>Tipos de dados:</h4>
 
-<img src="https://github.com/inessouza/bootcamp-santander/blob/main/postgreSQL/imagens/tiposNumericos.PNG?raw=true"/>
-<img src="https://github.com/inessouza/bootcamp-santander/blob/main/postgreSQL/imagens/caracteres.PNG?raw=true"/>
-<img src="https://github.com/inessouza/bootcamp-santander/blob/main/postgreSQL/imagens/datas.PNG?raw=true"/>
-<img src="https://github.com/inessouza/bootcamp-santander/blob/main/postgreSQL/imagens/boolean.PNG?raw=true"/>
+<img src="http://1.bp.blogspot.com/-3KWYCX6CIK0/UEKJycQIVgI/AAAAAAAAApY/pcdrvA0p3po/s1600/num%C3%A9ricos+inteiros.PNG"/>
+<img src="http://4.bp.blogspot.com/-2O3bmLy46uM/UEKJlNuYopI/AAAAAAAAApI/s2qAp51vOM0/s1600/texto+binario.PNG"/>
+<img src="http://1.bp.blogspot.com/-xSAww4oTaCo/UELghIl6i9I/AAAAAAAAAqU/UWv1AIi8lYU/s1600/enum+e+set.PNG"/>
+<img src="http://2.bp.blogspot.com/-mIVvNRtVra4/UEKMFauVtLI/AAAAAAAAApw/7p62ovAC2kw/s1600/datas.PNG"/>
+<img src="http://4.bp.blogspot.com/-BYls_u9yGtA/UELgwhSVqEI/AAAAAAAAAqc/veBsx1ZogPE/s1600/bit+e+boll.PNG"/>
 
 <h4>DML</h4>
 Data Manipulation Language (Linguagem de Manipulação de Dados)
