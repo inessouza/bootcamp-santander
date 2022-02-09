@@ -29,4 +29,6 @@
 <li>*[ ] Crie seu gerenciador de salas de reuniões com Java e Angular </li>
 </ul>
 
+<hr/>
+
 **Fonte:** <a href="https://web.digitalinnovation.one"> Digital Innovation One </a>
